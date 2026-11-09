@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мій мультимедійний світ</title>
+
+    <style>
+        body {
+            margin: 0;
+            background: #eef7f2;
+            color: #263344;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        header {
+            padding: 35px 15px;
+            background: #253b80;
+            color: white;
+        }
+
+        section {
+            max-width: 750px;
+            margin: 25px auto;
+            padding: 25px;
+            border-radius: 16px;
+            background: white;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        h2 {
+            color: #253b80;
+        }
+
+        video,
+        audio,
+        img {
+            width: 100%;
+            max-width: 650px;
+            border-radius: 12px;
+        }
+
+        iframe {
+            width: 100%;
+            max-width: 650px;
+            aspect-ratio: 16 / 9;
+            border: 0;
+            border-radius: 12px;
+        }
+
+        footer {
+            padding: 20px;
+            background: #253b80;
+            color: white;
+        }
+
+        @media (max-width: 600px) {
+            section {
+                margin: 20px 12px;
+                padding: 18px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Мій мультимедійний світ</h1>
+        <p>Моя перша сторінка з відео та аудіо</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>Зображення з інтернету</h2>
+            <p>Краса природи навколо нас</p>
+            <img
+                src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=1000&amp;auto=format&amp;fit=crop&amp;q=80"
+                alt="Величні гірські вершини під хмарним небом"
+            >
+        </section>
+
+        <section>
+            <h2>Відео з інтернету</h2>
+            <p>Подивіться коротке відео про квіти.</p>
+            <video controls preload="metadata">
+                <source
+                    src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4"
+                    type="video/mp4"
+                >
+                Ваш браузер не підтримує відео.
+            </video>
+        </section>
+
+        <section>
+            <h2>Аудіо з інтернету</h2>
+            <p>Послухайте звук тиранозавра!</p>
+            <audio controls preload="metadata">
+                <source
+                    src="https://interactive-examples.mdn.mozilla.net/media/cc0-audio/t-rex-roar.mp3"
+                    type="audio/mpeg"
+                >
+                Ваш браузер не підтримує аудіо.
+            </audio>
+        </section>
+
+        <section>
+            <h2>Відео з YouTube</h2>
+            <p>Додатковий спосіб вставлення відео.</p>
+            <iframe
+                src="https://www.youtube.com/embed/aqz-KE-bpKQ"
+                title="Відео YouTube — Big Buck Bunny"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+            ></iframe>
+        </section>
+    </main>
+
+    <footer>
+        <p>Створено на уроці інформатики | 11 клас</p>
+    </footer>
+</body>
+</html>
